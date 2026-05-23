@@ -6,4 +6,4 @@ class Config:
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'sqlite:///site.db'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     UPLOAD_FOLDER = 'static/uploads'
-    MAX_CONTENT_LENGTH = 64 * 1024 * 1024 # 64MB max file size
+    MAX_CONTENT_LENGTH = 1024 * 1024 * 1024 # 64MB max file size
